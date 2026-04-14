@@ -1,0 +1,6 @@
+#include <stdio.h>
+
+int main(void) {
+char *self = "#include <stdio.h>%c%cint main(void) {%cchar *self = %c%s%c;%cprintf(self, 10,10,10, 34,self,34, 10);}";
+	printf(self, 10,10,10, 34,self,34, 10);
+}
