@@ -1,4 +1,5 @@
 <div align="center">
+  <img width="1460" height="349" alt="Image" src="https://github.com/user-attachments/assets/00b62be7-1d56-4f06-bdd7-b9b5e20349c8" />
 <h1>🧬 Dr-quine </h1>
   <h2>Mon premier pas vers les programmes auto-réplicants</h2>
   <p align="center">
