@@ -1,6 +1,6 @@
-name = Grace
+NAME = Grace
 
-flags = -O
+FLAGS = -O
 
 all : $(NAME)
 

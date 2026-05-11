@@ -1,16 +1,20 @@
 NAME = Sully
-CFLAGS = Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 all : $(NAME)
 
 $(NAME) :
-	gcc $(CFLAGS) -o $(NAME)
+	gcc $(CFLAGS) $(NAME).c -o $(NAME)
+
+diff: all
+	./$(NAME)
+	diff Sully.c Sully_0.c
 
 clean:
-	rm *.o
+	rm *.o || true
+	rm Sully_* || true
 
 fclean : clean
 	rm $(NAME)
-	rm Sully_*
 
 re : fclean all

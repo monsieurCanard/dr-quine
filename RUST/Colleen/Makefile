@@ -1,6 +1,6 @@
-name = Colleen
+NAME = Colleen
 
-flags = -O
+FLAGS = -O
 
 all : $(NAME)
 
@@ -10,11 +10,12 @@ $(NAME) : Colleen.rs
 run : $(NAME)
 	./$(NAME)
 
-diff : $(NAME)
+diff : all
 	./$(NAME) > output.txt
+	diff output.txt Colleen.rs
 
 clean :
-	rm output.txt
+	rm output.txt || true
 
 fclean : clean
 	rm $(NAME)
