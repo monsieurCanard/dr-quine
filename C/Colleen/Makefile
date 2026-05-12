@@ -15,7 +15,7 @@ clean:
 	rm -rf *.o
 
 fclean: clean
-	rm Colleen
-	rm output.txt
+	rm Colleen || true
+	rm output.txt || true
 
 re: fclean all

@@ -19,6 +19,6 @@ clean:
 
 fclean: clean
 	rm -r Grace
-	rm Grace_kid.asm
+	rm Grace_kid.asm || true
 
 re: fclean all

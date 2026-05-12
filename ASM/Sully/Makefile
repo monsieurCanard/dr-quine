@@ -17,10 +17,10 @@ diff : run
 	diff Sully.asm Sully_0.asm
 
 clean :
-	rm *.o
+	rm *.o || true
 
 fclean : clean
-	rm Sully_*
+	rm Sully_* || true
 	rm Sully
 
 re : fclean all
